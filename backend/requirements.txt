@@ -1,0 +1,26 @@
+# AudienceFlow Backend — Python dependencies
+# Compatible with Python 3.11–3.14
+# Install with: pip install -r requirements.txt
+
+# Web framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# Database
+sqlalchemy>=2.0.30
+# psycopg2-binary 2.9.11+ supports Python 3.14 (prebuilt wheels)
+psycopg2-binary>=2.9.11
+alembic>=1.13.2
+
+# Validation & settings (2.13+ required for Python 3.14 prebuilt wheels)
+pydantic>=2.13.0
+pydantic-settings>=2.7.0
+email-validator>=2.2.0
+
+# Environment
+python-dotenv>=1.0.1
+python-multipart>=0.0.9
+
+# Security (future auth — installed now so imports resolve)
+passlib[bcrypt]>=1.7.4
+python-jose[cryptography]>=3.3.0
